@@ -1,0 +1,23 @@
+export PATH="/Users/anaconda3/bin:$PATH"
+source ~/.bash_profile
+2.查看当前系统下的环境：
+
+conda info -e
+
+3.创建环境：
+
+conda create env_name                (env_name)是环境名称,这条命令将会给Biopython创建一个新的环境，位置在Anaconda安装文件的/envs/snowflakes
+
+创建指定python版本的环境：
+
+conda create env_name python=3.6           (3.6为python的版本，根据自己的需要更改)
+
+创建包含某些包的环境：
+
+conda create env_name numpy scipy
+
+创建指定python版本下包含某些包的环境：
+ 
+conda create env_name python=3.6  numpy scipy
+
+conda remove env_name
